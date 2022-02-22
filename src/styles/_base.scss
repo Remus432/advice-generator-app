@@ -1,3 +1,4 @@
+@use "./variables";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 html {
@@ -5,5 +6,13 @@ html {
 }
 
 body {
+  background-color: variables.$color-darkblue;
+  display: grid;
+  font-family: "Manrope", sans-serif;
   font-size: 1.6rem;
+  min-height: 100vh;
+  padding-inline: 1.6rem;
+  place-content: center;
 }
+
+.dice__dot.hide { opacity: 0!important; }
